@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;400&display=swap");
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+body {
+  background: var(--violet);
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+.logo {
+  margin: 40px 51px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 530px;
+}
+
+.first {
+  display: flex;
+  height: 480px;
+}
+
+.second {
+  position: relative;
+  /* display: flex; */
+  width: 455px;
+  height: 507px;
+  color: white;
+}
+
+.second h1 {
+  width: 360px;
+  font-family: "Poppins", sans-serif;
+}
+
+.second p {
+  font-family: "Open Sans", sans-serif;
+  margin: 18px 0px;
+}
+
+.second button:hover {
+  padding: 16px 70px;
+  color: grey;
+  border: none;
+  color: white;
+  box-shadow: -2px 2px 15px #404040;
+  border-radius: 30px;
+  font-size: 16px;
+  background: var(--SoftMagenta);
+}
+
+.second button {
+  cursor: pointer;
+  padding: 16px 70px;
+  color: grey;
+  border: none;
+  background: white;
+  color: var(--violet);
+  box-shadow: -2px 2px 15px #404040;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+/* .social-icons img {
+  
+  width: 50px;
+} */
+
+.social-icons {
+  display: flex;
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+  width: 165px;
+  justify-content: space-around;
+}
+
+.frame:hover {
+  display: flex;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid violet;
+}
+
+.frame {
+  display: flex;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+
+/* ------------- media queries ------------- */
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    margin: 40px auto;
+    width: 204px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 910px;
+    width: 740px;
+    margin: auto;
+  }
+
+  .second {
+    margin: 23px auto;
+    text-align: center;
+  }
+
+  .second h1 {
+    margin: auto;
+  }
+
+  .second p {
+    width: 300px;
+    margin: 13px auto;
+  }
+
+  .second button {
+    margin: 7px auto;
+  }
+
+  .social-icons {
+    width: 165px;
+    right: 142px;
+  }
+}
+
+@media screen and (max-width: 715px){
+  .logo {
+  margin: 40px 260px;
+  width: 207px;
+  }
+}
